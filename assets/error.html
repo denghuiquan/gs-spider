@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>Mark Deng's first online App</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="backimg">
+<h1 class="center error margin-large">Stat: 404</h1>
+<div class="center">
+	<p class="error">Sorry! Source Not Found!</p>
+	<button class="error err-bt" onclick="window.location='/'">Back To Home</button>
+</div>
+<script type="text/javascript">
+	function load(){
+		setTimeout(function(){
+			window.location="/";
+		},3000);
+	}
+	document.getElementsByTagName('body').onload=load();
+</script>
+</body>
+</html>

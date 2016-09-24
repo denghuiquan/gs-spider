@@ -1,0 +1,60 @@
+cmd 登录heroku ：heroku login
+
+Heroku app deploy:
+heroku create
+git push heroku master 
+heroku ps:scale web=1
+heroku open
+
+view log: heroku logs --tail
+
+check how many dynos are running using the ps command: heroku ps
+
+The demo app you deployed already has a package.json, and it looks something like this:
+{
+  "name": "node-js-getting-started",
+  "version": "0.1.4",
+  ...
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "~4.9.x"
+  },
+  ...
+  "engines": {
+    "node": "0.12.2"
+  },
+}
+
+Push local changes:
+git add .
+git commit -m "描述修改内容和目的"
+git push heroku master
+heroku open
+
+
+D:\nodejs\MarkDengBlog>express -e hello
+
+   create : hello
+   create : hello/package.json
+   create : hello/app.js
+   create : hello/public
+   create : hello/public/javascripts
+   create : hello/public/images
+   create : hello/public/stylesheets
+   create : hello/public/stylesheets/style.css
+   create : hello/routes
+   create : hello/routes/index.js
+   create : hello/routes/users.js
+   create : hello/views
+   create : hello/views/index.ejs
+   create : hello/views/error.ejs
+   create : hello/bin
+   create : hello/bin/www
+
+   install dependencies:
+     > cd hello && npm install
+
+   run the app:
+     > SET DEBUG=hello:* & npm start
+
+SET DEBUG=markdeng:* & npm start
